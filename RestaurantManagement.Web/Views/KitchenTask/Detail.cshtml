@@ -1,0 +1,48 @@
+﻿@model RestaurantManagement.Entities.KitchenTask
+
+@Html.Partial("_Message")
+
+<div class="container border mt-4 p-4">
+    <div class="row">
+       
+        <hr />
+    </div>
+    <form method="post" action="#">
+         <input type="hidden" asp-for="ID" />
+
+        <div class="row mb-3">
+            <label asp-for="MenuItemsID" class="form-label"></label>
+            <input type="text" class="form-control" readonly="readonly" value="@Model.MenuItemss.ItemsName" />
+            @* <input asp-for="MenuItemsID" class="form-control" value="@Model.MenuItemss?.ItemsName" readonly /> *@
+        </div>
+
+        <div class="row mb-3">
+            <label asp-for="Status" class="form-label"></label>
+            <select asp-for="Status"  class="form-select">
+                <option disabled selected>--Select Status--</option>
+                <option>Pending</option>
+                <option>Cooking</option>
+                <option>Ready</option>
+            </select>
+            <span asp-validation-for="Status" class="text-danger"></span>
+        </div>
+        
+        <div class="row mb-3">
+            <div class="col-6">
+                <button type="submit" class="btn btn-primary">
+                    <i class="bi bi-floppy2"></i> &nbsp;Submit
+                </button>
+                &nbsp;
+                <a asp-action="Index" asp-controller="KitchenTask" class="btn btn-outline-secondary">
+                    <i class="bi bi-arrow-left-circle"></i> &nbsp;Back To List
+                </a>
+            </div>
+			
+        </div>
+    </form>
+</div>
+
+@section Scripts 
+{
+    @Html.Partial("_ValidationScriptsPartial")
+}

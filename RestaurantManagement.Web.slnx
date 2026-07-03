@@ -1,0 +1,9 @@
+<Solution>
+  <Project Path="RestaurantManagement.Api/RestaurantManagement.Api.csproj" Id="c1568daf-1e15-4e4a-adba-f9da225d9ed2" />
+  <Project Path="RestaurantManagement.Data/RestaurantManagement.Data.csproj" Id="c842af04-6df3-4bc6-a92e-92c8e3d59fc5" />
+  <Project Path="RestaurantManagement.Entities/RestaurantManagement.Entities.csproj" Id="6af2a68e-01e7-478b-87ff-666dc98c17e3" />
+  <Project Path="RestaurantManagement.Models/RestaurantManagement.Models.csproj" Id="0b759e81-b933-4ad7-9d6f-3a32053db05d" />
+  <Project Path="RestaurantManagement.Repos/RestaurantManagement.Repos.csproj" Id="efb67ffb-cef8-4be9-ac41-ff473df51aac" />
+  <Project Path="RestaurantManagement.Shared/RestaurantManagement.Shared.csproj" Id="f8eff297-ae7f-41b5-a702-9f0954f55d33" />
+  <Project Path="RestaurantManagement.Web/RestaurantManagement.Web.csproj" />
+</Solution>
