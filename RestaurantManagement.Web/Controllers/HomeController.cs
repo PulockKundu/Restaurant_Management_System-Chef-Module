@@ -5,7 +5,7 @@ using Microsoft.AspNetCore.Authorization;
 
 namespace RestaurantManagement.Web.Controllers
 {
-    [Authorize(Roles="admin,chef")]
+    [Authorize(Roles="admin,chef,customer")]
     public class HomeController : Controller
     {
         private readonly ILogger<HomeController> _logger;

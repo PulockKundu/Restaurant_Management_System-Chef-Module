@@ -8,7 +8,7 @@ using RestaurantManagement.Shared;
 
 namespace RestaurantManagement.Web.Controllers
 {
-    [Authorize(Roles = "chef")]
+    [Authorize(Roles = "admin,chef")]
     public class InventoryController(InventoryRepo inventoryRepo,UserInfoRepo menuItemsRepo, CurrentUserHelper currentUserHelper) : Controller
     {
         public IActionResult Index()

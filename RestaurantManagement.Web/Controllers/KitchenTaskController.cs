@@ -7,7 +7,7 @@ using RestaurantManagement.Shared;
 
 namespace RestaurantManagement.Web.Controllers
 {
-    [Authorize(Roles = "chef")]
+    [Authorize(Roles = "admin,chef")]
     public class KitchenTaskController(KitchenTaskRepo kitchenTaskRepo,UserInfoRepo menuItemsRepo, CurrentUserHelper currentUserHelper) : Controller
     {
         public IActionResult Index()
