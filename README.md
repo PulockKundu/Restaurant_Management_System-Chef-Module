@@ -7,11 +7,11 @@ A role-based restaurant management(Chef Module) web application built with ASP.N
 This project is designed to manage restaurant operations such as kitchen task tracking, inventory usage, category management, and user authentication. It includes a web application for staff use and an API layer for category operations.
 
 ## Author
-Pulock Kumar Kundu
+Pulock Kumar Kundu,
 pulock7643@gmail.com
 
 ## Supervisor
-Jahid Hassan
+Jahid Hassan,
 Software Development Department, AIUB
 
 
